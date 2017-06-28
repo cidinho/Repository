@@ -1,7 +1,6 @@
 {
     "name": "entitiesphp/repository",
     "description": "Padrão Repository para o doctrine",
-    "version": "v0.5.2",
     "type": "library",
     "support": {
         "issues": "https://github.com/cidinho/Repository/issues",
@@ -22,9 +21,10 @@
             "EntitiesPHP\\": [
                 "framework/src/"
             ]
-        }
+        },
+		"files": ["src/RepositoryAtomic.php"]
     },
-        "files": ["src/RepositoryAtomic.php"]
+        
     },
     "minimum-stability": "dev"
 }
