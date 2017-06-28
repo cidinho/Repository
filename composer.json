@@ -23,8 +23,6 @@
             ]
         },
 		"files": ["src/RepositoryAtomic.php"]
-    },
-        
-    },
+    }, 
     "minimum-stability": "dev"
 }
