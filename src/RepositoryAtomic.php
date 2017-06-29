@@ -1,6 +1,6 @@
 <?php
 
-namespace Modelo\Solicitacao\RepositoryAtomic;
+namespace EntitiesPHP\Repository;
 
 function save($entity):void {
     

@@ -8,7 +8,7 @@
     },
     "require": {
         "php": ">=7.1",
-		"doctrine/orm": "v2.5.6"
+        "doctrine/orm": "v2.5.6"
     },
     "license": "MIT",
     "authors": [
@@ -19,11 +19,11 @@
     ],
     "autoload": {
         "psr-4": {
-            "EntitiesPHP\\": [
+            "EntitiesPHP\\Repository\\": [
                 "src/"
             ]
         },
-		"files": ["src/RepositoryAtomic.php"]
+        "files": ["src/RepositoryAtomic.php"]
     }, 
     "minimum-stability": "dev"
 }
