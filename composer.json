@@ -20,7 +20,7 @@
     "autoload": {
         "psr-4": {
             "EntitiesPHP\\": [
-                "framework/src/"
+                "src/"
             ]
         },
 		"files": ["src/RepositoryAtomic.php"]
