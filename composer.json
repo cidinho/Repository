@@ -23,7 +23,9 @@
                 "src/"
             ]
         },
-        "files": ["src/RepositoryAtomic.php"]
+        "files": [
+            "src/RepositoryAtomic.php"
+        ]
     }, 
     "minimum-stability": "dev"
 }
