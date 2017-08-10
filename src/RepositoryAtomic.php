@@ -3,11 +3,26 @@
 namespace EntitiesPHP\Repository;
 
 use Symfony\Component\VarDumper\VarDumper;
+use \Doctrine\ORM\ORMInvalidArgumentException;
 
 function save($entity): void {
-    $em = EntityManager::get_instance();
-    $em->persist($entity);
-    $em->flush();
+    try {
+        $em = EntityManager::get_instance();
+        $em->persist($entity);
+        $em->flush();
+    } catch (ORMInvalidArgumentException $ex) {
+        die($ex->getMessage());
+    }
+}
+
+function remove($entity): void {
+    try {
+        $em = EntityManager::get_instance();
+        $em->remove($entity);
+        $em->flush();
+    } catch (ORMInvalidArgumentException $ex) {
+        die($ex->getMessage());
+    }
 }
 
 function get(string $entity, int $id = 0) {
@@ -21,6 +36,6 @@ function get(string $entity, int $id = 0) {
     return $retorno;
 }
 
-function dump($var){
+function dump($var) {
     VarDumper::dump($var);
 }
